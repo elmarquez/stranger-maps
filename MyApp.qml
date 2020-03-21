@@ -51,22 +51,22 @@ App {
     //--------------------------------------------------------------------------
 
     Rectangle {
-        id: appBackground
         anchors.fill: app
-        gradient: Gradient {
-            GradientStop { position: 0.0; color: "#0B0B0B" }
-            GradientStop { position: 0.33; color: "#1E1E1E" }
-            GradientStop { position: 1.0; color: "#0B0B0B" }
-        }
+        color: "#0B0B0B"
+        // gradient: Gradient {
+        //     GradientStop { position: 0.0; color: "#0B0B0B" }
+        //     GradientStop { position: 0.33; color: "#1E1E1E" }
+        //     GradientStop { position: 1.0; color: "#0B0B0B" }
+        // }
     }
 
     StackView {
+        id: appStackView
+
         property int transitionDuration: 650
 
         anchors.fill: app
-        id: appStackView
         initialItem: "views/Home.qml"
-
         popEnter: Transition {
             PropertyAnimation {
                 duration: appStackView.transitionDuration

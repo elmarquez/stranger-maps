@@ -13,81 +13,81 @@ import QtPositioning 5.3
  * player clicks a menu option, the screen transitions to the next view.
  */
 Page {
-    property real textHeight: app.scaleFactor * 14
-
     id: homePage
 
+    property real textHeight: app.scaleFactor * 14
+
     Image {
-        fillMode: Image.PreserveAspectFit
         id: strangerThingsTitleImage
+
+        fillMode: Image.PreserveAspectFit
         source: "../assets/titles/stranger-things-background.png"
         sourceSize.height: app.height
         sourceSize.width: app.width
     }
 
     ColumnLayout {
-        anchors.horizontalCenter: parent.horizontalCenter
-        // anchors.top: parent.top
-        // anchors.topMargin: app.height * 0.35
-        anchors.verticalCenter: parent.verticalCenter
         id: homePageMenuLayout
+
+        anchors.horizontalCenter: parent.horizontalCenter
+        anchors.verticalCenter: parent.verticalCenter
         spacing: homePage.textHeight * 5
 
         Layout.preferredWidth: app.width
 
         Image {
-            fillMode: Image.PreserveAspectFit
             id: willByersMenuOption
+
+            antialiasing: true
+            fillMode: Image.PreserveAspectFit
             smooth: true
             source: "../assets/labels/will-byers.svg"
             sourceSize.height: homePage.textHeight * 1.5
-            // visible: false
 
             Layout.alignment: Qt.AlignHCenter;
 
             MouseArea {
                 anchors.fill: parent
                 onClicked: {
-                    appStackView.push("./scenarios/WillByers.qml")
+                    appStackView.push("./placeholder.qml")
                 }
             }
         }
 
         Image {
-            fillMode: Image.PreserveAspectFit
             id: secretLabMenuOption
+
+            fillMode: Image.PreserveAspectFit
             smooth: true
             source: "../assets/labels/a-secret-lab.svg"
             sourceSize.height: homePage.textHeight * 1.5
-            // visible: false
 
             Layout.alignment: Qt.AlignHCenter;
 
             MouseArea {
                 anchors.fill: parent
                 onClicked: {
-                    appStackView.push("./scenarios/ASecretLab.qml")
+                    appStackView.push("./ASecretLab.qml")
                 }
             }
-
         }
+
         Image {
-            fillMode: Image.PreserveAspectFit
             id: theRussiansMenuOption
+
+            fillMode: Image.PreserveAspectFit
             smooth: true
             source: "../assets/labels/the-russians.svg"
             sourceSize.height: homePage.textHeight * 1.5
-            // visible: false
 
             Layout.alignment: Qt.AlignHCenter;
 
             MouseArea {
                 anchors.fill: parent
                 onClicked: {
-                    appStackView.push("./scenarios/TheRussians.qml")
+                    appStackView.push("./placeholder.qml")
                 }
             }
-
         }
         
         // DropShadow {
@@ -123,11 +123,12 @@ Page {
     }
 
     Image {
+        id: settingsLabel
+
         anchors.bottom: parent.bottom
         anchors.bottomMargin: homePage.textHeight * 6
         anchors.horizontalCenter: parent.horizontalCenter
         fillMode: Image.PreserveAspectFit
-        id: settingsLabel
         smooth: true
         source: "../assets/labels/settings.svg"
         sourceSize.height: homePage.textHeight
@@ -135,7 +136,7 @@ Page {
         MouseArea {
             anchors.fill: parent
             onClicked: {
-                    appStackView.push("./Settings.qml")
+                    appStackView.push("./placeholder.qml")
             }
         }
 

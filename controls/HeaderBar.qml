@@ -4,12 +4,12 @@ import QtQuick.Layouts 1.13
 
 import ArcGIS.AppFramework 1.0
 
-RowLayout{
+RowLayout {
     anchors.fill: parent
     spacing:0
     clip:true
 
-    Rectangle{
+    Rectangle {
         Layout.preferredWidth: 50*scaleFactor
     }
 
@@ -24,7 +24,7 @@ RowLayout{
         Layout.alignment: Qt.AlignCenter
     }
 
-    Rectangle{
+    Rectangle {
         id:infoImageRect
         Layout.alignment: Qt.AlignRight
         Layout.preferredWidth: 50*scaleFactor
