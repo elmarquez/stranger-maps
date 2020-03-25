@@ -17,6 +17,12 @@ Page {
 
     property real textHeight: app.scaleFactor * 14
 
+    StackView.onActivated: {
+        console.log('homePage activated');
+        // themeSong.play();
+    }
+    StackView.onDeactivated: { console.log('homePage deactivated'); }
+
     Image {
         id: strangerThingsTitleImage
 
@@ -67,7 +73,7 @@ Page {
             MouseArea {
                 anchors.fill: parent
                 onClicked: {
-                    appStackView.push("./ASecretLab.qml")
+                    appStackView.push("./a-secret-lab/View.qml")
                 }
             }
         }

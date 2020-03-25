@@ -24,22 +24,20 @@ import QtGraphicalEffects 1.12
 import QtMultimedia 5.11
 import QtQuick 2.13
 import QtQuick.Controls 2.13
-import QtQuick.Layouts 1.13
 import QtQuick.Controls.Material 2.1
+import QtQuick.Layouts 1.13
 import QtPositioning 5.3
 import QtSensors 5.3
 
 import ArcGIS.AppFramework 1.0
 import Esri.ArcGISRuntime 100.3
 
-import "controls" as Controls
-
 //------------------------------------------------------------------------------
 
 App {
     id: app
-    width: 414
     height: 736
+    width: 414
 
     function units(value) {
         return AppFramework.displayScaleFactor * value
@@ -53,11 +51,6 @@ App {
     Rectangle {
         anchors.fill: app
         color: "#0B0B0B"
-        // gradient: Gradient {
-        //     GradientStop { position: 0.0; color: "#0B0B0B" }
-        //     GradientStop { position: 0.33; color: "#1E1E1E" }
-        //     GradientStop { position: 1.0; color: "#0B0B0B" }
-        // }
     }
 
     StackView {
@@ -102,11 +95,13 @@ App {
     }
 
     Audio {
+        id: themeSong
+
         autoLoad: true
         autoPlay: true
-        id: themeSong
         loops: SoundEffect.Infinite
         source: "assets/audio/theme.wav"
         volume: 0.3
     }
+
 }

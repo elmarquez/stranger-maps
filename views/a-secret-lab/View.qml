@@ -4,8 +4,6 @@ import QtQuick 2.13
 import QtQuick.Controls 2.13
 import QtQuick.Layouts 1.13
 
-import "../controls" as Controls
-
 /**
  * "A Secret Lab" game scenario.
  */
@@ -23,7 +21,7 @@ Page {
             id: backArrow
 
             antialiasing: true
-            source: "../assets/icons/boxicons/regular/bx-left-arrow-alt.svg"
+            source: "../../assets/icons/boxicons/regular/bx-left-arrow-alt.svg"
             sourceSize.height: 36
             visible: false
             x: 16
@@ -53,6 +51,12 @@ Page {
             GradientStop { position: 0.33; color: "#1E1E1E" }
             GradientStop { position: 1.0; color: "#0B0B0B" }
         }
+    }
+
+    Image { 
+        anchors.top: parent.top
+        source: "../../assets/backgrounds/secret-lab-red-filter.png"
+        sourceSize.width: parent.width
     }
     
     ScrollView {
@@ -85,7 +89,7 @@ Page {
                 color: "#B3B3B3"
                 font.family: "Avenir Next"
                 font.pointSize: 18
-                text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
                 wrapMode: Text.Wrap
 
                 Layout.leftMargin: parent.textMargin
@@ -94,7 +98,7 @@ Page {
             }
 
             Button {
-                onClicked: appStackView.push('ASecretLabMap.qml')
+                onClicked: appStackView.push('./game/View.qml')
                 text: "Start"
 
                 Layout.bottomMargin: parent.textMargin * 2
