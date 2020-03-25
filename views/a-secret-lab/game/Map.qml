@@ -17,7 +17,6 @@ Page {
     property string itemID: "fe852181a7884208bdd15f29a8e36e66"
 
     MapView {
-        id: mapView
         anchors.fill: parent
 
         Map {

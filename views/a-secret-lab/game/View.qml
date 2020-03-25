@@ -32,6 +32,7 @@ Page {
         color: "#0B0B0B"
 
         StackView {
+            id: aSecretLabStackView
             property int transitionDuration: 650
 
             anchors.fill: parent
@@ -78,12 +79,14 @@ Page {
         background: Rectangle {
             color: "#2B2B2B"
         }
+        currentIndex: 1
         width: parent.width
 
         TabButton {
             background: Rectangle {
                 color: "#0B0B0B"
             }
+            onClicked: aSecretLabStackView.push('./AR.qml')
             padding: 32
             Image {
                 anchors.horizontalCenter: parent.horizontalCenter
@@ -97,7 +100,8 @@ Page {
             background: Rectangle {
                 color: "#0B0B0B"
             }
-            padding: parent.tabButtonPadding
+            onClicked: aSecretLabStackView.push('./Map.qml')
+            padding: 32
             Image {
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
@@ -110,7 +114,8 @@ Page {
             background: Rectangle {
                 color: "#0B0B0B"
             }
-            // padding: parent.tabButtonPadding
+            onClicked: aSecretLabStackView.push('./Chat.qml')
+            padding: 32
             Image {
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
