@@ -15,9 +15,13 @@ Page {
 
     Rectangle {
         anchors.fill: parent
+        color: "#0B0B0B"
 
-        Text {
-            text: "Mock walkie talkie goes here"
+        Image {
+            anchors.top: parent.top
+            source: "../../../assets/backgrounds/trc214.svg"
+            sourceSize.height: app.height
+            sourceSize.width: app.width
         }
     }
 

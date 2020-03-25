@@ -24,6 +24,13 @@ Page {
             initUrl: portalUrl + itemID
             onLoadStatusChanged: {}
         }
+
+        PositionSource {
+            onPositionChanged: {
+                // center the map on the current position
+                map.center = position.coordinate
+            }
+        }
     }
 
 }

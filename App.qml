@@ -42,9 +42,9 @@ App {
     function units(value) {
         return AppFramework.displayScaleFactor * value
     }
-    property real scaleFactor: AppFramework.displayScaleFactor
     property int baseFontSize : app.info.propertyValue("baseFontSize", 15 * scaleFactor) + (isSmallScreen ? 0 : 3)
     property bool isSmallScreen: (width || height) < units(400)
+    property real scaleFactor: AppFramework.displayScaleFactor
 
     //--------------------------------------------------------------------------
 

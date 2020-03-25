@@ -126,39 +126,4 @@ Page {
         }
     }
 
-    // footer: Rectangle {
-    //     id: footer
-
-    //     color: "#393939"
-    //     height: 64 * scaleFactor
-
-    //     GridLayout {
-    //         anchors.fill: parent
-    //         anchors.horizontalCenter: app.horizontalCenter
-    //         columns: 3
-
-    //         Image {
-    //             source: "../assets/icons/ar-view.svg"
-    //             sourceSize.height: 32
-    //             sourceSize.width: 32
-    //         }
-    //         Image {
-    //             source: "../assets/icons/map-view.svg"
-    //             sourceSize.height: 32
-    //             sourceSize.width: 32
-    //         }
-    //         Image {
-    //             source: "../assets/icons/chat-view.svg"
-    //             sourceSize.height: 32
-    //             sourceSize.width: 32
-    //         }
-    //     }
-    // }
-
-    Action {
-        id: setViewToGameMapAction
-        text: qsTr("Map")
-        onTriggered: window.activeFocusItem.copy()
-    }
-
 }

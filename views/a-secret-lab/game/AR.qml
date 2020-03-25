@@ -15,9 +15,13 @@ Page {
 
     Rectangle {
         anchors.fill: parent
+        color: "#0B0B0B"
 
-        Text {
-            text: "Mock augmented reality view goes here"
+        Image {
+            anchors.top: parent.top
+            source: "../../../assets/backgrounds/trail-ar.png"
+            sourceSize.height: app.height
+            sourceSize.width: app.width
         }
     }
 
