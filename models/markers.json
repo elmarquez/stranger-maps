@@ -1,0 +1,98 @@
+{
+    "statename" : "Victoria",
+    "distance" : "0.000",
+    "elevation" : "29",
+    "osmtags" : {
+        "wikipedia" : "en:City of Melbourne",
+        "wikidata" : "Q1919098",
+        "population" : "93625",
+        "note-postal-code" : "See seperate postal_code boundary.",
+        "place" : "suburb",
+        "name" : "Melbourne City",
+        "admin-level" : "10",
+        "vicmap-pfi" : "205410007",
+        "boundary" : "administrative",
+        "type" : "boundary"
+    },
+    "state" : "VIC",
+    "latt" : "-37.84808",
+    "city" : "MELBOURNE",
+    "prov" : "AU",
+    "intersection" : {
+        "distance" : "0.039",
+        "xlat" : "-37.84776",
+        "xlon" : "144.979595",
+        "street2" : "Beatrice Street",
+        "street1" : "St Kilda Road"
+    },
+    "geocode" : "MEL-CYPZL",
+    "geonumber" : "5594644270577",
+    "country" : "Australia",
+    "stnumber" : "574",
+    "staddress" : "ST KILDA ROAD",
+    "inlatt" : "-37.84808",
+    "alt" : {
+        "loc" : {
+            "staddress" : "ST KILDA ROAD",
+            "stnumber" : "574",
+            "postal" : "3004",
+            "latt" : "-37.84808",
+            "city" : "MELBOURNE",
+            "prov" : "VIC",
+            "longt" : "144.97940",
+            "class" : {}
+        }
+    },
+    "timezone" : "Australia/Melbourne",
+    "region" : "Victoria Australia",
+    "postal" : "3004",
+    "poi" : {
+        "country" : "US",
+        "poilat" : "-37.84693",
+        "addr-housenumber" : "553",
+        "addr-city" : "Melbourne",
+        "name" : "Consulate General of the United States",
+        "diplomatic" : "consulate_general",
+        "addr-postcode" : "3004",
+        "contact-website" : "http://melbourne.usconsulate.org/",
+        "contact-phone" : "+61 3 95265900",
+        "addr-street" : "St Kilda Road",
+        "amenity" : "embassy",
+        "poilon" : "144.98009",
+        "id" : "2105067353",
+        "poidist" : "0.141"
+    },
+    "longt" : "144.97940",
+    "remaining_credits" : {},
+    "confidence" : "1",
+    "inlongt" : "144.97940",
+    "class" : {},
+    "adminareas" : {
+        "admin10" : {
+            "wikipedia" : "en:City of Melbourne",
+            "wikidata" : "Q1919098",
+            "population" : "93625",
+            "note-postal-code" : "See seperate postal_code boundary.",
+            "place" : "suburb", 
+            "name" : "Melbourne City",
+            "admin-level" : "10",
+            "vicmap-pfi" : "205410007",
+            "level" : "10",
+            "boundary" : "administrative",
+            "type" : "boundary"
+        },
+        "admin6" : {
+            "wikipedia" : "en:City of Port Phillip",
+            "wikidata" : "Q747477",
+            "population" : "91372",
+            "place" : "municipality",
+            "name" : "City of Port Phillip",
+            "admin-level" : "6",
+            "level" : "6",
+            "boundary" : "administrative",
+            "source-population" : "Australian Bureau of Statistics",
+            "type" : "boundary"
+        }
+    },
+    "altgeocode" : "CONSULATE-CYPZL"
+}

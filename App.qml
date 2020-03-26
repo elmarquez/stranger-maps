@@ -59,7 +59,7 @@ App {
         property int transitionDuration: 650
 
         anchors.fill: app
-        initialItem: "views/Home.qml"
+        initialItem: "controls/Home.qml"
         popEnter: Transition {
             PropertyAnimation {
                 duration: appStackView.transitionDuration
